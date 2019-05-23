@@ -7,11 +7,12 @@ goog.require('ga_layers_service');
 goog.require('ga_maputils_service');
 goog.require('ga_urlutils_service');
 goog.require('ga_window_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_layermanager_directive', [
-    'pascalprecht.translate',
+    'ngVueComponents',
     'ga_layermetadatapopup_service',
     'ga_layers_service',
     'ga_maputils_service',

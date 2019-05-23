@@ -10,11 +10,12 @@ goog.require('ga_urlutils_service');
 goog.require('ga_vector_service');
 goog.require('ga_wms_service');
 goog.require('ga_wmts_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_permalinklayers_service', [
-    'pascalprecht.translate',
+    'ngVueComponents',
     'ga_filestorage_service',
     'ga_layerfilters_service',
     'ga_vector_service',

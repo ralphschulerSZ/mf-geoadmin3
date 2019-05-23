@@ -7,7 +7,7 @@ goog.require('ga_permalink_service');
 goog.require('ga_stylesfromliterals_service');
 goog.require('ga_tilegrid_service');
 goog.require('ga_time_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 goog.require('ga_urlutils_service');
 
 (function() {
@@ -22,8 +22,8 @@ goog.require('ga_urlutils_service');
     'ga_time_service',
     'ga_urlutils_service',
     'ga_permalink_service',
-    'ga_translation_service',
-    'pascalprecht.translate'
+    'ngVueComponents'//,
+    // 'pascalprecht.translate'
   ]);
 
   /**

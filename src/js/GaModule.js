@@ -60,10 +60,9 @@ goog.require('ga_timestamp_control');
 goog.require('ga_tooltip');
 goog.require('ga_tooltip_controller');
 goog.require('ga_topic');
-goog.require('ga_translation');
-goog.require('ga_translation_controller');
 goog.require('ga_vector_tile');
 goog.require('ga_waitcursor_service');
+goog.require('ngVueComponents');
 (function() {
 
   var module = angular.module('geoadmin', [
@@ -84,7 +83,6 @@ goog.require('ga_waitcursor_service');
     'ga_timeselector',
     'ga_timestamp_control',
     'ga_backgroundselector',
-    'ga_translation',
     'ga_feedback',
     'ga_layermanager',
     'ga_tooltip',
@@ -119,7 +117,6 @@ goog.require('ga_waitcursor_service');
     'ga_print_controller',
     'ga_profile_controller',
     'ga_profilepopup_controller',
-    'ga_translation_controller',
     'ga_feedback_controller',
     'ga_contextpopup_controller',
     'ga_search_controller',
@@ -130,19 +127,20 @@ goog.require('ga_waitcursor_service');
     'ga_draw_controller',
     'ga_drawstyle_controller',
     'ga_drawstylepopup_controller',
-    'ga_vector_tile'
+    'ga_vector_tile',
+    'ngVueComponents'
   ]);
 
-  module.config(function($translateProvider, gaGlobalOptions) {
-    $translateProvider.useStaticFilesLoader({
-      prefix: gaGlobalOptions.resourceUrl + 'locales/',
-      suffix: '.json'
-    });
-    $translateProvider.cloakClassName('ng-cloak');
-    // TODO: Use $sanitize instead in the future
-    // see http://angular-translate.github.io/docs/#/guide/19_security
-    $translateProvider.useSanitizeValueStrategy(null);
-  });
+  // module.config(function($translateProvider, gaGlobalOptions) {
+  //   $translateProvider.useStaticFilesLoader({
+  //     prefix: gaGlobalOptions.resourceUrl + 'locales/',
+  //     suffix: '.json'
+  //   });
+  //   $translateProvider.cloakClassName('ng-cloak');
+  //   // TODO: Use $sanitize instead in the future
+  //   // see http://angular-translate.github.io/docs/#/guide/19_security
+  //   $translateProvider.useSanitizeValueStrategy(null);
+  // });
 
   module.config(function(gaLayersProvider, gaGlobalOptions) {
 

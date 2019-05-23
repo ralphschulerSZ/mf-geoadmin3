@@ -1,11 +1,12 @@
 goog.provide('ga_exportkml_service');
 goog.require('ga_browsersniffer_service');
+goog.require('ngVueComponents');
 (function() {
 
   var module = angular.module('ga_exportkml_service', [
     'ga_browsersniffer_service',
     'ga_kml_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   /**

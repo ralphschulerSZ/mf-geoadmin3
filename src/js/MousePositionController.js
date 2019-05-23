@@ -1,12 +1,13 @@
 goog.provide('ga_mouseposition_controller');
 
 goog.require('ga_measure_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_mouseposition_controller', [
     'ga_measure_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.controller('GaMousePositionController', function($scope, $translate,

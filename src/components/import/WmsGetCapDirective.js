@@ -1,11 +1,12 @@
 goog.provide('ga_wmsgetcap_directive');
 
 goog.require('ga_urlutils_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_wmsgetcap_directive', [
-    'pascalprecht.translate',
+    'ngVueComponents',
     'ga_urlutils_service'
   ]);
 

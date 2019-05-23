@@ -14,6 +14,7 @@ goog.require('ga_sanitize_service');
 goog.require('ga_time_service');
 goog.require('ga_topic_service');
 goog.require('ga_window_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -32,7 +33,7 @@ goog.require('ga_window_service');
     'ga_time_service',
     'ga_topic_service',
     'ga_window_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.directive('gaTooltip',

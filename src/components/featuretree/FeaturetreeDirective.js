@@ -2,15 +2,15 @@ goog.provide('ga_featuretree_directive');
 
 goog.require('ga_layers_service');
 goog.require('ga_previewfeatures_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_featuretree_directive', [
     'ga_layers_service',
     'ga_previewfeatures_service',
-    'ga_translation_service',
-    'pascalprecht.translate'
+    'ngVueComponents'//,
+    // 'pascalprecht.translate'
   ]);
 
   /**

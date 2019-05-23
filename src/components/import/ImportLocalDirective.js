@@ -1,12 +1,13 @@
 goog.provide('ga_importlocal_directive');
 
 goog.require('ga_file_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_importlocal_directive', [
     'ga_file_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.directive('gaImportLocal', function($q, $timeout, $translate, gaFile) {

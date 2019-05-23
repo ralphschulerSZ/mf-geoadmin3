@@ -6,6 +6,7 @@ goog.require('ga_layers_service');
 goog.require('ga_maputils_service');
 goog.require('ga_slider_directive');
 goog.require('ga_time_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -16,7 +17,7 @@ goog.require('ga_time_service');
     'ga_maputils_service',
     'ga_slider_directive',
     'ga_time_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.controller('GaTimeSelectorDirectiveController',

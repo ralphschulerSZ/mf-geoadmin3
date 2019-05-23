@@ -8,13 +8,13 @@ goog.require('ga_maputils_service');
 goog.require('ga_networkstatus_service');
 goog.require('ga_storage_service');
 goog.require('ga_topic_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 goog.require('ga_window_service');
 
 (function() {
 
   var module = angular.module('ga_main_controller', [
-    'pascalprecht.translate',
+    // 'pascalprecht.translate',
     'ga_map',
     'ga_map_load_service',
     'ga_networkstatus_service',
@@ -22,7 +22,7 @@ goog.require('ga_window_service');
     'ga_background_service',
     'ga_topic_service',
     'ga_window_service',
-    'ga_translation_service'
+    'ngVueComponents'
   ]);
 
   /**
@@ -87,6 +87,8 @@ goog.require('ga_window_service');
 
     // Determines if the window has a height <= 550
     var win = $($window);
+
+    gaLang.setLocalesBaseUrl(gaGlobalOptions.configUrl);
 
     // The main controller creates the OpenLayers map object. The map object
     // is central, as most directives/components need a reference to it.
@@ -271,7 +273,8 @@ goog.require('ga_window_service');
       isSwipeActive: false,
       is3dActive: startWith3D,
       isFpsActive: false,
-      hostIsProd: gaGlobalOptions.hostIsProd
+      hostIsProd: gaGlobalOptions.hostIsProd,
+      langs: ["de","en", "fr"]
     };
 
     // gaWindow is efficient only after the dom is ready

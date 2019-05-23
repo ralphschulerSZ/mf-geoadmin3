@@ -4,18 +4,18 @@ goog.require('ga_definepropertiesforlayer_service');
 goog.require('ga_layers_service');
 goog.require('ga_maputils_service');
 goog.require('ga_tilegrid_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 goog.require('ga_urlutils_service');
 
 (function() {
 
   var module = angular.module('ga_wms_service', [
     'ga_definepropertiesforlayer_service',
-    'pascalprecht.translate',
+    // 'pascalprecht.translate',
     'ga_layers_service',
     'ga_maputils_service',
     'ga_urlutils_service',
-    'ga_translation_service',
+    'ngVueComponents',
     'ga_tilegrid_service'
   ]);
 

@@ -2,14 +2,14 @@ goog.provide('ga_seo_directive');
 
 goog.require('ga_layers_service');
 goog.require('ga_seo_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 (function() {
 
   var module = angular.module('ga_seo_directive', [
     'ga_layers_service',
     'ga_seo_service',
-    'ga_translation_service',
-    'pascalprecht.translate'
+    'ngVueComponents',
+    // 'pascalprecht.translate'
   ]);
 
   module.directive('gaSeo',

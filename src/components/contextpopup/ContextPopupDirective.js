@@ -8,6 +8,7 @@ goog.require('ga_networkstatus_service');
 goog.require('ga_reframe_service');
 goog.require('ga_what3words_service');
 goog.require('ga_window_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -20,7 +21,7 @@ goog.require('ga_window_service');
     'ga_reframe_service',
     'ga_window_service',
     'ga_what3words_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.directive('gaContextPopup',

@@ -7,7 +7,7 @@ goog.require('ga_permalink');
 goog.require('ga_search_service');
 goog.require('ga_search_type_directives');
 goog.require('ga_topic_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 goog.require('ga_vector_service');
 goog.require('ga_what3words_service');
 
@@ -20,7 +20,7 @@ goog.require('ga_what3words_service');
     'ga_search_service',
     'ga_search_type_directives',
     'ga_urlutils_service',
-    'ga_translation_service',
+    'ngVueComponents',
     'ga_topic_service',
     'ga_maputils_service',
     'ga_layers_service',

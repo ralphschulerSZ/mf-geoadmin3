@@ -1,13 +1,13 @@
 goog.provide('ga_featuretree_controller');
 
 goog.require('ga_print_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_featuretree_controller', [
     'ga_print_service',
-    'ga_translation_service'
+    'ngVueComponents'
   ]);
 
   module.controller('GaFeaturetreeController', function($http, $scope,

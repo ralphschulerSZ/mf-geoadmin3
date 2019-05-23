@@ -4,6 +4,7 @@ goog.require('ga_browsersniffer_service');
 goog.require('ga_permalink');
 goog.require('ga_urlutils_service');
 goog.require('ga_window_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -12,7 +13,7 @@ goog.require('ga_window_service');
     'ga_permalink',
     'ga_urlutils_service',
     'ga_window_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.directive('gaShare', function($rootScope, $timeout, $translate,

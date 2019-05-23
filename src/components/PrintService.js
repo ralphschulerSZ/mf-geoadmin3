@@ -1,8 +1,9 @@
 goog.provide('ga_print_service');
+goog.require('ngVueComponents');
 (function() {
 
   var module = angular.module('ga_print_service', [
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.provider('gaPrint', function() {

@@ -140,6 +140,7 @@ itemscope itemtype="http://schema.org/WebApplication"
       <div id="search-container" ng-controller="GaSearchController">
         <div ga-search ga-search-map="map" ga-search-options="options" ga-search-focused="globals.searchFocused" ga-search-ol3d="::ol3d"></div>
         <span ga-help="24,31,25" ga-help-options="{showOnHover:true}"></span>
+        <!-- <greeter name="'Welt'"></greeter> -->
         <div class="warning-not-prod" ng-if="!globals.hostIsProd">
           <span translate>test_host_warning</span>
         </div>
@@ -152,9 +153,10 @@ itemscope itemtype="http://schema.org/WebApplication"
         </a>&nbsp;&nbsp;
         <a target="_blank" href="//help.geo.admin.ch/?lang={{langId}}" translate>help_label</a>&nbsp;&nbsp;
         <a class="ga-redirect" href="{{deviceSwitcherHref}}" translate>mobile_redirect</a>&nbsp;&nbsp;
-        <div ng-controller="GaTranslationController">
+<!--         <div ng-controller="GaTranslationController">
           <div ga-translation-selector ga-translation-selector-options="options"></div>
-        </div>
+        </div> -->
+        <language-switcher languages="globals.langs"></language-switcher>
       </div>
       <button class="btn ga-menu-bt" ng-click="globals.pulldownShown=true" translate>menu</button>
       ## css animation doesnt work on pseudo element, let use this instead
@@ -646,8 +648,8 @@ itemscope itemtype="http://schema.org/WebApplication"
     <script src="${s3basepath}lib/jQuery.XDomainRequest.js"></script>
     <script src="${s3basepath}lib/slip.js"></script>
     <script src="${s3basepath}lib/angular.js"></script>
-    <script src="${s3basepath}lib/angular-translate.js"></script>
-    <script src="${s3basepath}lib/angular-translate-loader-static-files.js"></script>
+    <!-- <script src="${s3basepath}lib/angular-translate.js"></script> -->
+    <!-- <script src="${s3basepath}lib/angular-translate-loader-static-files.js"></script> -->
     <script src="${s3basepath}lib/d3.js"></script>
     <script src="${s3basepath}lib/bootstrap.js"></script>
     <script src="${s3basepath}lib/typeahead.jquery.js"></script>
@@ -663,7 +665,7 @@ itemscope itemtype="http://schema.org/WebApplication"
     <script src="${s3basepath}lib/gyronorm.complete.js"></script>
     <script src="${s3basepath}lib/Cesium/Cesium.js"></script>
 
-
+    
     <!-- Use Closure to load the application scripts -->
     <script>
       window.CLOSURE_NO_DEPS = true;
@@ -672,6 +674,11 @@ itemscope itemtype="http://schema.org/WebApplication"
     <script src="${s3basepath}lib/ol.js"></script>
     <script src="${s3basepath}lib/olcesium-debug.js"></script>
     <script src="${s3basepath}deps.js"></script>
+    <script src="${s3basepath}lib/appVueLib.js"></script>
+    <!-- <script src="${s3basepath}js/appVueLib_NgVueBridge.js"></script> -->
+    <script src="${s3basepath}lib/appVueLib_VendorsDependencies.js"></script>
+    <script src="${s3basepath}js/GaModule.js"></script>
+
     <script>
       goog.require('geoadmin');
     </script>

@@ -1,12 +1,13 @@
 goog.provide('ga_importonline_directive');
 
 goog.require('ga_file_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_importonline_directive', [
     'ga_file_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.directive('gaImportOnline', function($q, $timeout, $translate,

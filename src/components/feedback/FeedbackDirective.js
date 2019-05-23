@@ -4,6 +4,7 @@ goog.require('ga_browsersniffer_service');
 goog.require('ga_exportkml_service');
 goog.require('ga_permalink');
 goog.require('ga_window_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -12,7 +13,7 @@ goog.require('ga_window_service');
     'ga_exportkml_service',
     'ga_permalink',
     'ga_window_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   /**

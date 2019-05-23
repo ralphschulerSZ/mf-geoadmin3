@@ -1,10 +1,10 @@
 goog.provide('ga_shop_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_shop_service', [
-    'ga_translation_service',
+    'ngVueComponents',
     'ga_browsersniffer_service'
   ]);
 

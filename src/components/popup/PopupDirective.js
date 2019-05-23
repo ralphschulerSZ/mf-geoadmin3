@@ -3,12 +3,14 @@ goog.provide('ga_popup_directive');
 goog.require('ga_browsersniffer_service');
 goog.require('ga_print_service');
 goog.require('ga_window_service');
+goog.require('ngVueComponents');
+
 (function() {
 
   var module = angular.module('ga_popup_directive', [
     'ga_browsersniffer_service',
     'ga_print_service',
-    'pascalprecht.translate',
+    'ngVueComponents',
     'ga_window_service'
   ]);
 

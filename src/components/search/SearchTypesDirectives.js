@@ -11,6 +11,7 @@ goog.require('ga_previewlayers_service');
 goog.require('ga_search_service');
 goog.require('ga_topic_service');
 goog.require('ga_urlutils_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -173,7 +174,7 @@ goog.require('ga_urlutils_service');
     'ga_previewlayers_service',
     'ga_search_service',
     'ga_urlutils_service',
-    'pascalprecht.translate',
+    'ngVueComponents',
     'ga_topic_service'
   ]);
 

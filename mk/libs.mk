@@ -89,8 +89,6 @@ install-libs: install-cesium \
               install-ol-cesium
 	npm install;
 	cp -f $(addprefix node_modules/angular/, angular.js angular.min.js) src/lib/;
-	cp -f $(addprefix node_modules/angular-translate/dist/, angular-translate.js angular-translate.min.js) src/lib/;
-	cp -f $(addprefix node_modules/angular-translate/dist/angular-translate-loader-static-files/, angular-translate-loader-static-files.js angular-translate-loader-static-files.min.js) src/lib/;
 	cp -f $(addprefix node_modules/localforage/dist/, localforage.js localforage.min.js) src/lib/;
 	cp -f $(addprefix node_modules/jquery/dist/, jquery.js jquery.min.js) src/lib/;
 	cp -f $(addprefix node_modules/jquery-ajax-transport-xdomainrequest/, jQuery.XDomainRequest.js  jquery.xdomainrequest.min.js) src/lib/;
@@ -104,4 +102,9 @@ install-libs: install-cesium \
 	$(call compilejs,fastclick)
 	$(call compilejs,slip)
 
-
+.PHONY: ng-vue
+ng-vue:
+	cd vueApp && npm run build && cd ..;
+	cp vueApp/dist/js/appVueLib.js src/lib;
+	cp vueApp/dist/js/appVueLib_VendorsDependencies.js src/lib;
+	cp vueApp/dist/js/appVueLib_NgVueBridge.js src/js;

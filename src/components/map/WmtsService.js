@@ -2,7 +2,7 @@ goog.provide('ga_wmts_service');
 
 goog.require('ga_definepropertiesforlayer_service');
 goog.require('ga_maputils_service');
-goog.require('ga_translation_service');
+// goog.require('ga_translation_service');
 goog.require('ga_urlutils_service');
 
 (function() {

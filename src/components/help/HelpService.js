@@ -1,11 +1,11 @@
 goog.provide('ga_help_service');
 
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_help_service', [
-    'ga_translation_service'
+    'ngVueComponents'
   ]);
 
   /**

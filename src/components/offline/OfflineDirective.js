@@ -1,12 +1,13 @@
 goog.provide('ga_offline_directive');
 
 goog.require('ga_networkstatus_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_offline_directive', [
     'ga_networkstatus_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.controller('GaOfflineDirectiveController',

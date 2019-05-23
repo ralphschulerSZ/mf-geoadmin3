@@ -1,11 +1,12 @@
 goog.provide('ga_draw_controller');
 
 goog.require('ga_styles_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_draw_controller', [
-    'pascalprecht.translate',
+    'ngVueComponents',
     'ga_styles_service'
   ]);
 

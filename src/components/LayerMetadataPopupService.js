@@ -4,6 +4,7 @@ goog.require('ga_layers_service');
 goog.require('ga_maputils_service');
 goog.require('ga_popup');
 goog.require('ga_wms_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -12,7 +13,7 @@ goog.require('ga_wms_service');
     'ga_layers_service',
     'ga_popup',
     'ga_wms_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.provider('gaLayerMetadataPopup', function() {

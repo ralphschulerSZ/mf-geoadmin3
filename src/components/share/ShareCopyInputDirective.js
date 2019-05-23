@@ -1,12 +1,13 @@
 goog.provide('ga_sharecopyinput_directive');
 
 goog.require('ga_browsersniffer_service');
+goog.require('ngVueComponents');
 
 (function() {
 
   var module = angular.module('ga_sharecopyinput_directive', [
     'ga_browsersniffer_service',
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   /**

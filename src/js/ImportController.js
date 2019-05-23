@@ -4,7 +4,7 @@ goog.require('ga_browsersniffer_service');
 goog.require('ga_file_service');
 goog.require('ga_maputils_service');
 goog.require('ga_previewlayers_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 goog.require('ga_urlutils_service');
 goog.require('ga_vector_service');
 goog.require('ga_wmts_service');
@@ -17,7 +17,7 @@ goog.require('ga_wmts_service');
     'ga_maputils_service',
     'ga_urlutils_service',
     'ga_previewlayers_service',
-    'ga_translation_service',
+    'ngVueComponents',
     'ga_vector_service'
   ]);
 

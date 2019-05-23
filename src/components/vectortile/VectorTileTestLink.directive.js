@@ -1,13 +1,13 @@
 goog.provide('ga_vector_tile_test_link');
 
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 goog.require('ga_permalink_service');
 goog.require('ga_urlutils_service');
 
 (function() {
 
   angular.module('ga_vector_tile_test_link', [
-    'ga_translation_service',
+    'ngVueComponents',
     'ga_permalink_service',
     'ga_urlutils_service'
   ]).

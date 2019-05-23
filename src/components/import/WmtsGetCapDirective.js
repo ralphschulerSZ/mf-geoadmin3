@@ -1,9 +1,11 @@
 goog.provide('ga_wmtsgetcap_directive');
 
+goog.require('ngVueComponents');
+
 (function() {
 
   var module = angular.module('ga_wmtsgetcap_directive', [
-    'pascalprecht.translate'
+    'ngVueComponents'
   ]);
 
   module.directive('gaWmtsGetCap', function($translate) {

@@ -3,7 +3,7 @@ goog.provide('ga_catalogtree_directive');
 goog.require('ga_layerfilters_service');
 goog.require('ga_permalink');
 goog.require('ga_topic_service');
-goog.require('ga_translation_service');
+goog.require('ngVueComponents');
 
 (function() {
 
@@ -11,7 +11,7 @@ goog.require('ga_translation_service');
     'ga_layerfilters_service',
     'ga_permalink',
     'ga_topic_service',
-    'ga_translation_service'
+    'ngVueComponents'
   ]);
 
   /**
