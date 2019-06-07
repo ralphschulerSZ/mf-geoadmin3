@@ -121,4 +121,6 @@ showVariables:
 	@echo "S3_BUCKET_PROD   = $(S3_BUCKET_PROD)"
 	@echo "S3_BUCKET_INT    = $(S3_BUCKET_INT)"
 	@echo "S3_BUCKET_DEV    = $(S3_BUCKET_DEV)"
+	@echo "SRC_JS_FILES     = $(SRC_JS_FILES)"
+	@echo "SRC_JS_FILES_FOR_COMPILER     = $(SRC_JS_FILES_FOR_COMPILER)"
 

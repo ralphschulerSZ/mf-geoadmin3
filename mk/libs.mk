@@ -105,6 +105,4 @@ install-libs: install-cesium \
 .PHONY: ng-vue
 ng-vue:
 	cd vueApp && npm run build && cd ..;
-	cp vueApp/dist/js/appVueLib.js src/lib;
-	cp vueApp/dist/js/appVueLib_VendorsDependencies.js src/lib;
-	cp vueApp/dist/js/appVueLib_NgVueBridge.js src/js;
+	cp vueApp/dist/js/appVueLib.js src/js;

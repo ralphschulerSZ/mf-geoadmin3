@@ -9,8 +9,9 @@ ngVueComponentsModule.run($injector => {
     gaGeomUtils = $injector.get('gaGeomUtils');
 })
 
+const TranslationTemp = Translation;
 
-class gaLangBridge extends Translation {
+class gaLangBridge extends TranslationTemp {
     constructor() { super(); }
     get() {
         return this.getLang();

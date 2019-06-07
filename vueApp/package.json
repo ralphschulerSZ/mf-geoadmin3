@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack --config webpack.config.js && npm run build:goog && npm run build:deps",
-    "build:goog": "sed -i '1s/^/goog.provide(\"ngVueComponents\");\\n/' dist/js/appVueLib_NgVueBridge.js",
+    "build:goog": "sed -i '1s/^/goog.provide(\"ngVueComponents\");\\n/' dist/js/appVueLib.js",
     "build:deps": "python node_modules/google-closure-library/closure/bin/build/depswriter.py --root_with_prefix='src/DEV/oldstyleAngularApp/src src' --root_with_prefix='dist/js ../../../dist/js' --output_file=/tmp/deps && cat node_modules/google-closure-library/closure/goog/base.js /tmp/deps > src/DEV/oldstyleAngularApp/deps.js",
     "serve:vue": "NODE_ENV=development webpack-dev-server --color --hot --progress",
     "serve:angular": "NODE_ENV=development WRAPPER=angular webpack-dev-server --color --hot --progress"
