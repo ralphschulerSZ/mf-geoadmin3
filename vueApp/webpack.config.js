@@ -53,6 +53,7 @@ const config = {
         filename: path.join(settings.paths.js, '[name].js')
     },
     optimization: {
+        // Uncomment this to split lib into different parts
         // splitChunks: {
         //     chunks: 'all',
         //     maxInitialRequests: Infinity,
@@ -88,9 +89,12 @@ const config = {
             {
                 test: /\.js$/,
                 include: [path.join(__dirname, settings.paths.source)],
-                use: {
-                    loader: 'babel-loader'
-                }
+                loader: 'babel-loader',
+                // query: {
+                //     presets: [
+                //       'es2015'
+                //     ]
+                // }
             },
             {
                 test: /\.(sa|sc|c)ss$/,
