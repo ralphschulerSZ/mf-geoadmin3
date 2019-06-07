@@ -9,6 +9,8 @@ ngVueComponentsModule.run($injector => {
     gaGeomUtils = $injector.get('gaGeomUtils');
 })
 
+// This is necessary because of 
+// https://github.com/google/closure-compiler/issues/2182#issuecomment-287879773
 const TranslationTemp = Translation;
 
 class gaLangBridge extends TranslationTemp {
