@@ -15,3 +15,4 @@ export WMTS_URL=//tod.dev.bgdi.ch
 export TERRAIN_URL=//3d.dev.bgdi.ch
 export VECTORTILES_URL=//vectortiles{s}.dev.bgdi.ch/3d-tiles
 export CONFIG_URL=//mf-geoadmin3.dev.bgdi.ch
+export PROXY_URL=//service-proxy.bgdi.swisstopo.cloud
