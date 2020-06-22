@@ -198,7 +198,7 @@ describe('ga_layers_service', function() {
         expect(terrain).to.eql({
           type: 'terrain',
           serverLayerName: 'ch.swisstopo.terrain.3d',
-          timestamps: ['20180601'],
+          timestamps: ['20200520'],
           attribution: 'swisstopo',
           attributionUrl: 'https://www.swisstopo.admin.ch/somelang/home.html'
         });
